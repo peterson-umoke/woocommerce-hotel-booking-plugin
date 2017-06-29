@@ -1,0 +1,8 @@
+/**
+ * ==========================================
+ * Grid Styles - Using either neat or susy
+ * ==========================================
+ */
+.hotel-container {
+    @include container();
+}

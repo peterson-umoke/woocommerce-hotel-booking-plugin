@@ -1,0 +1,67 @@
+/**
+ * ==========================================
+ * Import the Basics and Kick off from there
+ * ==========================================
+ */
+
+@import "base";
+
+/**
+* Hack the Post type thingy
+*/
+.fontawesome-before:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    -webkit-transition: color .1s ease-in 0;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+* 'Hide certain items with this simple yet effective class
+*/
+.wbr-hide {
+    display: none;
+}
+
+.wbr-show {
+    display:show;
+}
+
+/**
+* Center all the children and parent text
+*/
+
+.center-the-text {
+	text-align: center;
+
+	&.make-it-important {
+		text-align:center !important;
+	}
+}
+
+.bold-the-text {
+	font-weight: bold !important;
+}
+
+.light-bold-text {
+	font-weight: 700;
+}
+.center-the-element {
+	margin-right:auto;
+	margin-left:auto;
+
+	&.make-it-important {
+		margin-right: auto !important;
+		margin-left: auto !important;
+	}
+}

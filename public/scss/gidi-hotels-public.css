@@ -1,0 +1,830 @@
+/**
+ * ==========================================
+ * Import the Basics and Kick off from there
+ * ==========================================
+ */
+/**
+ * ==========================================
+ * Grid Styles - Using either neat or susy
+ * ==========================================
+ */
+/* line 19, _grid.scss */
+.gh-grid-wrapper {
+  max-width: "1170px";
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.69492%;
+}
+/* line 12, ../../vendors/susy/susy/output/support/_clearfix.scss */
+.gh-grid-wrapper:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 23, _grid.scss */
+.gh-grid-wrapper .gh-grid-full {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 27, _grid.scss */
+.gh-grid-wrapper .gh-grid-one {
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 31, _grid.scss */
+.gh-grid-wrapper .gh-grid-two {
+  width: 15.25424%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 31, _grid.scss */
+  .gh-grid-wrapper .gh-grid-two {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 39, _grid.scss */
+.gh-grid-wrapper .gh-grid-three {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 39, _grid.scss */
+  .gh-grid-wrapper .gh-grid-three {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 47, _grid.scss */
+.gh-grid-wrapper .gh-grid-four {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 47, _grid.scss */
+  .gh-grid-wrapper .gh-grid-four {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 55, _grid.scss */
+.gh-grid-wrapper .gh-grid-five {
+  width: 40.67797%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 55, _grid.scss */
+  .gh-grid-wrapper .gh-grid-five {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 63, _grid.scss */
+.gh-grid-wrapper .gh-grid-six {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 63, _grid.scss */
+  .gh-grid-wrapper .gh-grid-six {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 71, _grid.scss */
+.gh-grid-wrapper .gh-grid-seven {
+  width: 57.62712%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 71, _grid.scss */
+  .gh-grid-wrapper .gh-grid-seven {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 79, _grid.scss */
+.gh-grid-wrapper .gh-grid-eight {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 79, _grid.scss */
+  .gh-grid-wrapper .gh-grid-eight {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 87, _grid.scss */
+.gh-grid-wrapper .gh-grid-nine {
+  width: 74.57627%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 87, _grid.scss */
+  .gh-grid-wrapper .gh-grid-nine {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 95, _grid.scss */
+.gh-grid-wrapper .gh-grid-ten {
+  width: 83.05085%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 95, _grid.scss */
+  .gh-grid-wrapper .gh-grid-ten {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 103, _grid.scss */
+.gh-grid-wrapper .gh-grid-eleven {
+  width: 91.52542%;
+  float: left;
+  margin-right: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 103, _grid.scss */
+  .gh-grid-wrapper .gh-grid-eleven {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 111, _grid.scss */
+.gh-grid-wrapper .gh-grid-twelve {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 600px) {
+  /* line 111, _grid.scss */
+  .gh-grid-wrapper .gh-grid-twelve {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 119, _grid.scss */
+.gh-grid-wrapper .last {
+  margin-right: 0;
+}
+/* line 123, _grid.scss */
+.gh-grid-wrapper .gh-grid-* {
+  margin-bottom: 1.69492%;
+}
+@media (max-width: 600px) {
+  /* line 123, _grid.scss */
+  .gh-grid-wrapper .gh-grid-* {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+/* line 130, _grid.scss */
+.gh-grid-wrapper.gh-clear {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 135, _grid.scss */
+.gh-gallery-five {
+  width: 18.91892%;
+  float: left;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-five:nth-child(5n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-five:nth-child(5n + 2) {
+  margin-left: 20.27027%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-five:nth-child(5n + 3) {
+  margin-left: 40.54054%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-five:nth-child(5n + 4) {
+  margin-left: 60.81081%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-five:nth-child(5n + 5) {
+  margin-left: 81.08108%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (max-width: 600px) {
+  /* line 135, _grid.scss */
+  .gh-gallery-five {
+    width: 100%;
+    float: left;
+  }
+  /* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+  .gh-gallery-five:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 143, _grid.scss */
+.gh-gallery-four {
+  width: 23.72881%;
+  float: left;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-four:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-four:nth-child(4n + 2) {
+  margin-left: 25.42373%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-four:nth-child(4n + 3) {
+  margin-left: 50.84746%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+.gh-gallery-four:nth-child(4n + 4) {
+  margin-left: 76.27119%;
+  margin-right: -100%;
+  clear: none;
+}
+@media (max-width: 600px) {
+  /* line 143, _grid.scss */
+  .gh-gallery-four {
+    width: 100%;
+    float: left;
+  }
+  /* line 66, ../../vendors/susy/susy/language/susy/_gallery.scss */
+  .gh-gallery-four:nth-child(1n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: none;
+  }
+}
+
+/* line 151, _grid.scss */
+.gh-clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 156, _grid.scss */
+.gh-make-space-top {
+  margin-top: 10px;
+}
+
+/**
+ * ==========================================
+ * Tab Styling and the others
+ * ==========================================
+ */
+/* line 7, _frontpage-layout.scss */
+.gh-tabs ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+/* line 13, _frontpage-layout.scss */
+.gh-tabs ul li {
+  display: inline-block;
+}
+/* line 16, _frontpage-layout.scss */
+.gh-tabs ul li a {
+  padding: 20px;
+  display: block;
+  background-color: white;
+  color: #D31F0D;
+  text-align: left;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  font-weight: bold;
+}
+/* line 25, _frontpage-layout.scss */
+.gh-tabs ul li a:hover, .gh-tabs ul li a:focus {
+  background-color: #D31F0D;
+  color: white;
+}
+/* line 31, _frontpage-layout.scss */
+.gh-tabs ul li.active a {
+  background-color: #D31F0D;
+  color: white;
+}
+/* line 35, _frontpage-layout.scss */
+.gh-tabs ul li.active a:hover, .gh-tabs ul li.active a:focus {
+  background-color: #D31F0D;
+}
+
+/* line 43, _frontpage-layout.scss */
+.gh-search-label {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* line 48, _frontpage-layout.scss */
+#gh-main-search {
+  background-color: rgba(255, 255, 255, 0.4);
+  margin-top: -28px;
+  padding: 20px;
+}
+
+/* line 43, _buttons.scss */
+.button-rounded {
+  border-radius: 3px !important;
+}
+
+/* line 47, _buttons.scss */
+.button-centered {
+  margin: auto !important;
+  display: inherit !important;
+}
+
+/* line 52, _buttons.scss */
+.button-block {
+  width: 100%;
+}
+
+/* line 56, _buttons.scss */
+.button-reset-ib {
+  display: inline-block !important;
+}
+
+/* line 97, _forms.scss */
+.select2-selection.select2-selection--single {
+  padding: 8px;
+}
+
+/* line 100, _forms.scss */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 60px;
+}
+
+/* line 107, _forms.scss */
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* line 115, _forms.scss */
+.select2-container--default .select2-selection--single {
+  border-color: #ececec;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/* line 121, _forms.scss */
+.select2-container--default .select2-selection--single:active {
+  border-color: #d5d5d5;
+  outline: none;
+}
+
+/* line 1, _tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 9, _tables.scss */
+thead {
+  line-height: 1.2;
+  vertical-align: bottom;
+}
+
+/* line 14, _tables.scss */
+tbody {
+  vertical-align: top;
+}
+
+/* line 18, _tables.scss */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 22, _tables.scss */
+th {
+  font-weight: 600;
+}
+
+/* line 26, _tables.scss */
+th,
+td {
+  padding: 0.75em 0.75em 0.75em 0;
+}
+
+/**
+ * ==========================================
+ * Hotel List Card
+ * ==========================================
+ */
+/* line 14, gidi-hotels-public.scss */
+.single-hotel-listing {
+  background-color: #F9F9F9;
+  border: 1px solid #ccc;
+}
+/* line 18, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-left {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  position: relative;
+}
+/* line 22, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-left p {
+  margin: 0;
+}
+/* line 27, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right {
+  padding-top: 10px;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  margin-right: 0;
+  float: right;
+}
+/* line 33, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right p {
+  margin: 0;
+}
+/* line 36, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top, .single-hotel-listing .gh-content-right .gh-card-middle, .single-hotel-listing .gh-content-right .gh-card-bottom {
+  max-width: "1170px";
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+}
+/* line 12, ../../vendors/susy/susy/output/support/_clearfix.scss */
+.single-hotel-listing .gh-content-right .gh-card-top:after, .single-hotel-listing .gh-content-right .gh-card-middle:after, .single-hotel-listing .gh-content-right .gh-card-bottom:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 40, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left, .single-hotel-listing .gh-content-right .gh-card-middle .content-left, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left {
+  width: 61.53846%;
+  float: left;
+  margin-right: 2.5641%;
+}
+/* line 42, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left p, .single-hotel-listing .gh-content-right .gh-card-middle .content-left p, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left p {
+  display: none;
+}
+/* line 46, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left a, .single-hotel-listing .gh-content-right .gh-card-middle .content-left a, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left a {
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 50, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left a h2, .single-hotel-listing .gh-content-right .gh-card-middle .content-left a h2, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left a h2 {
+  display: block;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 61, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left .star-ratings, .single-hotel-listing .gh-content-right .gh-card-middle .content-left .star-ratings, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left .star-ratings {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 65, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-left .star-ratings span, .single-hotel-listing .gh-content-right .gh-card-middle .content-left .star-ratings span, .single-hotel-listing .gh-content-right .gh-card-bottom .content-left .star-ratings span {
+  color: #D31F0D;
+}
+/* line 70, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-right, .single-hotel-listing .gh-content-right .gh-card-middle .content-right, .single-hotel-listing .gh-content-right .gh-card-bottom .content-right {
+  width: 29.48718%;
+  float: left;
+  margin-right: 2.5641%;
+  float: right;
+  text-align: right;
+}
+/* line 71, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-top .content-right p, .single-hotel-listing .gh-content-right .gh-card-middle .content-right p, .single-hotel-listing .gh-content-right .gh-card-bottom .content-right p {
+  display: none;
+}
+/* line 80, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-middle {
+  padding-top: 10px;
+  font-size: 0.8em;
+}
+/* line 85, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-middle .free-specials {
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+  color: yellowgreen;
+  text-transform: uppercase;
+}
+/* line 94, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-bottom {
+  border-bottom: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 100, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-bottom .hotel-listings__top-facility-icon-group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 104, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-bottom .hotel-listings__top-facility-icon-group li {
+  display: inline-block;
+  margin-right: 5px;
+  text-align: center;
+}
+/* line 109, gidi-hotels-public.scss */
+.single-hotel-listing .gh-content-right .gh-card-bottom .hotel-listings__top-facility-icon-group li:last-child {
+  margin-right: 0;
+}
+/* line 117, gidi-hotels-public.scss */
+.single-hotel-listing div.hotel-name h2 {
+  margin: 0 !important;
+}
+/* line 121, gidi-hotels-public.scss */
+.single-hotel-listing .picture_action {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 125, gidi-hotels-public.scss */
+.single-hotel-listing .picture_action span {
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  color: #D31F0D;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 138, gidi-hotels-public.scss */
+.hotel-listings__old-price {
+  font-size: 0.8em;
+}
+/* line 140, gidi-hotels-public.scss */
+.hotel-listings__old-price span {
+  background-color: #D31F0D;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* line 149, gidi-hotels-public.scss */
+.hotel-listings__new-price {
+  font-size: 2.4em;
+}
+
+/* line 153, gidi-hotels-public.scss */
+.gh-card-top .price, .single-hotel-listing .gh-content-right .gh-card-middle .price, .single-hotel-listing .gh-content-right .gh-card-bottom .price {
+  padding-top: 20px;
+}
+
+/* line 158, gidi-hotels-public.scss */
+.gh-card-top .address, .single-hotel-listing .gh-content-right .gh-card-middle .address, .single-hotel-listing .gh-content-right .gh-card-bottom .address {
+  font-size: 0.8em;
+}
+
+/* line 163, gidi-hotels-public.scss */
+.location-terms {
+  margin-top: 10px;
+}
+/* line 166, gidi-hotels-public.scss */
+.location-terms span {
+  color: white;
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #b3b34d;
+  display: inline-block;
+  font-size: 12px;
+}
+/* line 176, gidi-hotels-public.scss */
+.location-terms span:nth-child(2n + 1) {
+  background-color: #D31F0D;
+}
+/* line 179, gidi-hotels-public.scss */
+.location-terms span:nth-child(3n + 1) {
+  background-color: blueviolet;
+}
+
+/**
+ * ==========================================
+ * Single Hotel Listing
+ * ==========================================
+ */
+/* line 188, gidi-hotels-public.scss */
+.gh-breadcrumbs .woocommerce-breadcrumb {
+  display: block !important;
+}
+
+/* line 193, gidi-hotels-public.scss */
+.hotel-title-name h1 {
+  display: inline-block;
+  margin: 0;
+  color: #D31F0D;
+}
+/* line 199, gidi-hotels-public.scss */
+.hotel-title-name .br-wrapper {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 203, gidi-hotels-public.scss */
+.hotel-title-name .br-theme-fontawesome-stars .br-widget a {
+  font-size: 16px;
+}
+
+/* line 208, gidi-hotels-public.scss */
+.free-specials {
+  display: block;
+  padding: 10px;
+  padding-left: 0;
+  color: yellowgreen;
+  text-transform: uppercase;
+}
+
+/* line 216, gidi-hotels-public.scss */
+#hotel-gallery {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  position: relative;
+}
+/* line 221, gidi-hotels-public.scss */
+#hotel-gallery .owl-next, #hotel-gallery .owl-prev {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 25px;
+  padding: 15px;
+  line-height: 21px;
+  display: block;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.3em;
+}
+/* line 233, gidi-hotels-public.scss */
+#hotel-gallery .owl-next {
+  float: right;
+  right: 10px;
+}
+/* line 238, gidi-hotels-public.scss */
+#hotel-gallery .owl-prev {
+  float: left;
+  left: 10px;
+}
+
+/**
+ * ==========================================
+ * Tabs
+ * ==========================================
+ */
+/* line 250, gidi-hotels-public.scss */
+.gh-tabs {
+  overflow: hidden;
+  *zoom: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+/* line 254, gidi-hotels-public.scss */
+.gh-tabs a.active {
+  background-color: #D31F0D;
+  color: white;
+}
+/* line 259, gidi-hotels-public.scss */
+.gh-tabs a {
+  cursor: pointer;
+}
+
+/* line 264, gidi-hotels-public.scss */
+.gh-tab-content .tab-content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: none;
+}
+/* line 270, gidi-hotels-public.scss */
+.gh-tab-content .tab-content.active {
+  display: block;
+}
+
+/**
+ * ==========================================
+ * Google Maps
+ * ==========================================
+ */
+/* line 280, gidi-hotels-public.scss */
+#google-maps-modal {
+  height: 400px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: green;
+}
+
+/**
+ * ==========================================
+ * Coomon
+ * ==========================================
+ */
+/* line 292, gidi-hotels-public.scss */
+ul.no-list-styles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 297, gidi-hotels-public.scss */
+ul.no-list-styles li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+/* line 303, gidi-hotels-public.scss */
+.all-bordered {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* line 307, gidi-hotels-public.scss */
+.reset-heading {
+  margin: 0;
+}
+
+/* line 311, gidi-hotels-public.scss */
+.put-a-difference {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* line 316, gidi-hotels-public.scss */
+.more-air {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=gidi-hotels-public.css.map */

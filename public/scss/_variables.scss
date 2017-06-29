@@ -1,0 +1,57 @@
+// Typography
+// $base-font-family: $font-stack-system;
+// $heading-font-family: $base-font-family;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$eve_primary : #D31F0D;
+$eve_secondary: #dd200e;
+$eve_tertiary : #c91e0c;
+$background-color-top: #B5EBEB;
+$background-color-bottom: #5DAC5D;
+$background-color-aside: #F9F9F9;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$action-color: $blue;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+$mobile: 544px;
+$tablet: 768px;
+$desktop: 992px;
+$largedesktop: 1279px;
+
+$baby-var : $mobile;
+$mama-var : $mobile $tablet;
+$papa-var : $tablet $largedesktop;
+$grandpapa-var : $largedesktop;

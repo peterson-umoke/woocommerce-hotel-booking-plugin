@@ -1,0 +1,318 @@
+/**
+ * ==========================================
+ * Import the Basics and Kick off from there
+ * ==========================================
+ */
+
+@import "base";
+
+/**
+ * ==========================================
+ * Hotel List Card
+ * ==========================================
+ */
+.single-hotel-listing {
+    background-color: $background-color-aside;
+    border: 1px solid #ccc;
+
+    .gh-content-left {
+        @include span(4);
+        position:relative;
+
+        p {
+            margin:0;
+        }
+    }
+
+    .gh-content-right {
+        padding-top:10px;
+        @include span(8);
+        @include last;
+        float:right;
+
+        p {
+            margin:0;
+        }
+        .gh-card-top {
+            @include container(8);
+            border-bottom:1px solid #e6e6e6;
+            padding-bottom:10px;
+            .content-left {
+                @include span(5 of 8);
+                p {
+                    display:none;
+                }
+
+                a {
+                    overflow: hidden;
+                    display: inline-block;
+
+                    h2 {
+                        display:block;
+                        vertical-align: middle;
+                        font-weight: 700;
+                        font-size:24px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .star-ratings {
+                    display:inline-block;
+                    margin-left:5px;
+
+                    span {
+                        color: $eve_primary;
+                    }
+                }
+            }
+            .content-right {
+                p {
+                    display:none;
+                }
+                @include span(2.5 of 8);
+                float:right;
+                text-align: right;
+            }
+        }
+
+        .gh-card-middle {
+            @extend .gh-card-top;
+            padding-top:10px;
+            font-size:0.8em;
+
+            .free-specials {
+                display:block;
+                padding:10px;
+                padding-left:0;
+                color: yellowgreen;
+                text-transform: uppercase;
+            }
+        }
+
+        .gh-card-bottom {
+            @extend .gh-card-top;
+            border-bottom:none;
+            padding-top:10px;
+            padding-bottom:10px;
+
+            .hotel-listings__top-facility-icon-group {
+                list-style: none;
+                margin:0;
+                padding:0;
+                li {
+                    display: inline-block;
+                    margin-right:5px;
+                    text-align: center;
+
+                    &:last-child {
+                        @include last();
+                    }
+                }
+            }
+        }
+    }
+
+    div.hotel-name h2 {
+        margin:0 !important;
+    }
+
+    .picture_action {
+        position:absolute;
+        top:10px;
+        left:10px;
+        span {
+            // display:inline-block;
+            display:block;
+            padding:10px;
+            border-radius: 50%;
+            color: $eve_primary;
+            background: {
+                color: rgba(black,0.4);
+            }
+        }
+    }
+}
+
+.hotel-listings__old-price {
+    font-size: 0.8em;
+    span {
+        background-color: $eve_primary;
+        color:white;
+        padding:5px;
+        border-radius: 3px;
+        font-size:12px;
+    }
+}
+
+.hotel-listings__new-price {
+    font-size: 2.4em;
+}
+
+.gh-card-top .price {
+    padding-top:20px;
+}
+
+.gh-card-top {
+    .address {
+        font-size: 0.8em;
+    }
+}
+
+.location-terms {
+    margin-top:10px;
+
+    span {
+        color: white;
+        padding:5px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background-color: mix(yellow, blue,70%);
+        display:inline-block;
+        font-size:12px;
+    }
+    
+    span:nth-child(2n + 1) {
+        background-color: $eve_primary;
+    }
+    span:nth-child(3n + 1) {
+        background-color: blueviolet;                    }
+}
+
+/**
+ * ==========================================
+ * Single Hotel Listing
+ * ==========================================
+ */
+.gh-breadcrumbs .woocommerce-breadcrumb {
+    display:block !important;
+}
+
+.hotel-title-name {
+    h1 {
+        display:inline-block;
+        margin:0;
+        color: $eve_primary;
+    }
+
+    .br-wrapper {
+        display:inline-block;
+        margin-left:5px;
+    }
+    .br-theme-fontawesome-stars .br-widget a {
+        font-size: 16px;
+    }
+}
+
+.free-specials {
+    display:block;
+    padding:10px;
+    padding-left:0;
+    color: yellowgreen;
+    text-transform: uppercase;
+}
+
+#hotel-gallery {
+    background-color: rgba(black,0.3);
+    padding:10px;
+    position:relative;
+
+    .owl-next, .owl-prev {
+        position:absolute;
+        background-color: rgba(black,0.3);
+        top:25px;
+        padding:15px;
+        line-height: 21px;
+        display: block;
+        border-radius: 50%;
+        color: white;
+        font-size:1.3em;
+    }
+
+    .owl-next {
+        float:right;
+        right:10px;
+    }
+
+    .owl-prev {
+        float:left;
+        left:10px;
+    }
+}
+
+/**
+ * ==========================================
+ * Tabs
+ * ==========================================
+ */
+
+.gh-tabs {
+    @include clearfix();
+    border-bottom:1px solid rgba(0, 0, 0, 0.08);
+
+    a.active {
+        background-color: $eve_primary;
+        color:white;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.gh-tab-content .tab-content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: none;
+
+    &.active {
+        display: block;
+    }
+}
+
+/**
+ * ==========================================
+ * Google Maps
+ * ==========================================
+ */
+#google-maps-modal {
+    height:400px;
+    border:1px solid #ccc;
+    width:100%;
+    background-color: green;
+}
+
+/**
+ * ==========================================
+ * Coomon
+ * ==========================================
+ */
+ul.no-list-styles {
+    list-style: none;
+    margin:0;
+    padding:0;
+
+    li {
+        border-bottom:1px solid rgba(0,0,0,0.3);
+        padding:10px;
+    }
+}
+
+.all-bordered {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.reset-heading {
+    margin:0;
+}
+
+.put-a-difference {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.more-air {
+    padding:20px;
+}

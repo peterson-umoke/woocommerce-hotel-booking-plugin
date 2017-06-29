@@ -1,0 +1,52 @@
+/**
+ * ==========================================
+ * Tab Styling and the others
+ * ==========================================
+ */
+.gh-tabs {
+    ul {
+        margin:0;
+        padding:0;
+        list-style:none;
+        float:left;
+
+        li {
+            display:inline-block;
+
+            a {
+                padding:20px;
+                display:block;
+                background-color: white;
+                color: $eve_primary;
+                text-align: left;
+                @include transition(all linear 0.2s);
+                font-weight:bold;
+
+                &:hover, &:focus {
+                    background-color: $eve_primary;
+                    color: white;
+                }
+            }
+
+            &.active a {
+                background-color: $eve_primary;
+                color: white;
+
+                &:hover, &:focus {
+                    background-color: $eve_primary;
+                }
+            }
+        }
+    }
+}
+
+.gh-search-label {
+    font-size:14px;
+    margin:0;
+}
+
+#gh-main-search {
+    background-color: rgba(white, 0.4);
+    margin-top:-28px;
+    padding:20px;
+}

@@ -1,0 +1,158 @@
+/**
+ * ==========================================
+ * Grid Styles - Using either neat or susy
+ * ==========================================
+ */
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: "1170px",
+  container-position: center,
+  columns: 12,
+  gutters: .25,
+  global-box-sizing: border-box,
+  last-flow: from,
+);
+
+.gh-grid-wrapper {
+  @include container();
+  margin-bottom: gutter();
+
+  .gh-grid-full {
+    @include span(12);
+  }
+
+  .gh-grid-one {
+	  @include span(1);
+  }
+
+  .gh-grid-two {
+    @include span(2);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-three {
+    @include span(3);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-four {
+    @include span(4);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-five {
+    @include span(5);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-six {
+    @include span(6);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-seven {
+    @include span(7);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-eight {
+    @include span(8);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-nine {
+    @include span(9);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-ten {
+    @include span(10);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-eleven {
+    @include span(11);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .gh-grid-twelve {
+    @include span(12);
+
+    @include breakpoint(max-width 600px) {
+      @include span(12);
+    }
+  }
+
+  .last {
+		@include last;
+	}
+
+	.gh-grid-* {
+		margin-bottom: gutter();
+		@include breakpoint(max-width 600px) {
+			@include span(12);
+		}
+	}
+
+	&.gh-clear {
+		@include clearfix();
+	}
+}
+
+.gh-gallery-five {
+  @include gallery(3 of 15);
+
+  @include breakpoint(max-width 600px) {
+    @include gallery(1 of 1);
+  }
+}
+
+.gh-gallery-four {
+  @include gallery(3 of 12);
+
+  @include breakpoint(max-width 600px) {
+    @include gallery(1 of 1);
+  }
+}
+
+.gh-clearfix {
+  clear:both;
+  overflow:hidden;
+}
+
+.gh-make-space-top {
+  margin-top:10px;
+}

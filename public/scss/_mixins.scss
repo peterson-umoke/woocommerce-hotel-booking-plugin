@@ -1,0 +1,29 @@
+//**
+//* ==========================================
+//* Mixins
+//* ==========================================
+//
+
+@mixin baby-only() {
+    @include breakpoint($baby-var) {
+        @content;
+    }
+}
+
+@mixin mama-bear() {
+    @include breakpoint($mama-var) {
+        @content;
+    }
+}
+
+@mixin papa-bear() {
+    @include breakpoint($papa-var) {
+        @content;
+    }
+}
+
+@mixin grandpa-bear() {
+    @include breakpoint($papa-var) {
+        @content;
+    }
+}
