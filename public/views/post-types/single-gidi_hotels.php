@@ -26,7 +26,7 @@ $star_count = get_post_meta(get_the_ID(), "_gidi_hotels_star_rating", true);
 			</div>
 			<div class="hotel-title-name">
 				<h1 title="<?php the_title(); ?>"><?php the_title(); ?></h1>
-				<select id="star-rating">
+				<select id="star-rating" data-stars="<?php echo ($star_count) ? $star_count : 0; ?>">
 					<?php for($i = 1; $i <= 5; $i++): ?>
 						<option value="<?= $i; ?>"><?= $i; ?></option>
 					<?php endfor; ?>
@@ -52,7 +52,8 @@ $star_count = get_post_meta(get_the_ID(), "_gidi_hotels_star_rating", true);
 					<b>Offers: </b> <?php echo get_post_meta(get_the_ID(),"_gidi_hotels_specials_meta",true); ?>
 				</div>
 				<div class="gh-make-space-top free-specials">
-					<a href="#" class="button button-secondary button-rounded"> Book Now</a> <a href="#" class="button button-rounded"> Add Action Now</a> 
+					<a onclick="seeRooms()" class="button button-secondary button-rounded"> Book Now</a> 
+					<a onclick="" class="button button-rounded"> Add Action Now</a> 
 				</div>
 			</div>
 		</div>
@@ -99,10 +100,12 @@ $star_count = get_post_meta(get_the_ID(), "_gidi_hotels_star_rating", true);
 		</div>
 		<div class="gh-tab-content">
 			<div class="tab-content active" id="rooms_data">
-				<h4> Room Categories </h4>
-				<p>	<?php the_content(); ?> </p>
+				<?php 
+					$roomtemplate = new Gidi_hotels_template_loader();
+					$roomtemplate->gh_get_template_part("content","room"); 
+				?>
 			</div>
-			<div class="tab-content active" id="description">
+			<div class="tab-content" id="description">
 				<h4>About the Hotel </h4>
 				<p>	<?php the_content(); ?> </p>
 			</div>
@@ -177,11 +180,6 @@ $star_count = get_post_meta(get_the_ID(), "_gidi_hotels_star_rating", true);
 			</div>
 		</div>
 	</div>
-	<div class="gh-grid-four last">
-		<?php $roomtemplate = new Gidi_hotels_template_loader();
-
-			$roomtemplate->gh_get_template_part("content","room"); ?>
-	</div>	
 </div>
 
 <?php // If comments are open or we have at least one comment, load up the comment template.
@@ -233,9 +231,10 @@ endwhile;
 		var map = new google.maps.Map(mapCanvas, mapOptions);
 	}
 	jQuery(function($){
+		console.log();
 		$("#star-rating").barrating({
 			theme: 'fontawesome-stars',
-			initialRating: <?php echo $star_count; ?>,
+			initialRating:$("#star-rating").data("stars"),
 			readonly: true,
 		});
 	});
